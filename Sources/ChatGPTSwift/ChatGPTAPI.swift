@@ -22,6 +22,7 @@ public class ChatGPTAPI: @unchecked Sendable {
         public static let defaultTemperature = 0.5
     }
     
+    // private let urlString = "https://api.openai.com/v1/chat/completions"
     private let urlString = "https://api.openai.com/v1/chat/completions"
     private let apiKey: String
     private let gptEncoder = GPTEncoder()
