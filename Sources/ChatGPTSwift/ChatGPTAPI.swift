@@ -22,8 +22,8 @@ public class ChatGPTAPI: @unchecked Sendable {
         public static let defaultTemperature = 0.5
     }
     
-    // private let urlString = "https://api.openai.com/v1/chat/completions"
-    private let urlString = "https://a6mhhf3rva.hk.aircode.run/proxy"
+    private let urlString = "https://api.openai.com/v1/chat/completions"
+    // private let urlString = "https://a6mhhf3rva.hk.aircode.run/proxy"
     private let apiKey: String
     private let gptEncoder = GPTEncoder()
     public private(set) var historyList = [Message]()
@@ -53,6 +53,11 @@ public class ChatGPTAPI: @unchecked Sendable {
     
     public init(apiKey: String) {
         self.apiKey = apiKey
+    }
+    
+    public init(apiKey: String, url: String) {
+        self.apiKey = apiKey
+        self.urlString = url
     }
     
     private func generateMessages(from text: String, systemText: String) -> [Message] {
