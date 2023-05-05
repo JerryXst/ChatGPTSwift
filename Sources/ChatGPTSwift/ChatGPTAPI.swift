@@ -58,7 +58,7 @@ public class ChatGPTAPI: @unchecked Sendable {
     
     public init(apiKey: String, urlString: String) {
         self.apiKey = apiKey
-        self.urlString = url
+        self.urlString = urlString
     }
     
     private func generateMessages(from text: String, systemText: String) -> [Message] {
