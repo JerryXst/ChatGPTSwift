@@ -23,7 +23,7 @@ public class ChatGPTAPI: @unchecked Sendable {
     }
     
     // private let urlString = "https://api.openai.com/v1/chat/completions"
-    private let urlString = "https://api.openai.com/v1/chat/completions"
+    private let urlString = "https://a6mhhf3rva.hk.aircode.run/proxy"
     private let apiKey: String
     private let gptEncoder = GPTEncoder()
     public private(set) var historyList = [Message]()
