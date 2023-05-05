@@ -54,6 +54,7 @@ public class ChatGPTAPI: @unchecked Sendable {
     
     public init(apiKey: String) {
         self.apiKey = apiKey
+        self.urlString = "https://api.openai.com/v1/chat/completions"
     }
     
     public init(apiKey: String, urlString: String) {
