@@ -30,6 +30,14 @@ struct Request: Codable {
     let stream: Bool
 }
 
+struct PlainTextRequest: Codable {
+    let model: String
+    let temperature: Double
+    let message: String
+    let stream: Bool
+}
+
+
 struct ErrorRootResponse: Decodable {
     let error: ErrorResponse
 }
