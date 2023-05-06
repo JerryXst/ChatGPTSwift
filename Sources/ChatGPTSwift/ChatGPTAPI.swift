@@ -79,7 +79,7 @@ public class ChatGPTAPI: @unchecked Sendable {
 
         let request = PlainTextRequest(model: model, 
                                        temperature: temperature,
-                                       messages: text,
+                                       message: text,
                                        stream: stream)
         return try JSONEncoder().encode(request)
     }
